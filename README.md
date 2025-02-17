@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# SketchKey Creative Assistant
+This project includes web app that serves as a simple interactive UI for communication with our printer from the frontend side performed in React native. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Frontend part is written with the help of React Native, and the server side is represented by python script that enables the communication with an OpenAI model 
+( API version 0.28 the code is also written in the syntax and grammar of an older API version), translation to vector graphics and further translation to G-code to enable the printer to perform the output
 
 ## Available Scripts
 
