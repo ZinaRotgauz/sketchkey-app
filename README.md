@@ -1,8 +1,9 @@
 # SketchKey Creative Assistant
 This project includes web app that serves as a simple interactive UI for communication with our printer from the frontend side performed in React native. 
 
-The Frontend part is written with the help of React Native, and the server side is represented by python script that enables the communication with an OpenAI model 
-( API version 0.28 the code is also written in the syntax and grammar of an older API version), translation to vector graphics and further translation to G-code to enable the printer to perform the output
+The Frontend part is written with the help of React Native, and the server side is represented by server.js that receives the prompt style and output parameters, and calls a python script, that enables the communication with an OpenAI model 
+( API version 0.28 the code is also written in the syntax and grammar of an older API version),
+translation to vector graphics and further translation to G-code to enable the printer to perform the output.
 
 ## Available Scripts
 
@@ -15,6 +16,12 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
+
+### `python main.py`
+
+At the same time you start the GUI you are supposed to run the python script.
+
+### run the server.js manually by pressing a run button or via `node server.js`
 
 ### `npm test`
 
