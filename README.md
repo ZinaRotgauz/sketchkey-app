@@ -1,10 +1,37 @@
 # SketchKey Creative Assistant
-This project includes web app that serves as a simple interactive UI for communication with our printer from the frontend side performed in React native. 
+SketchKey is a React Native app ( addition to existing printer) designed to bring your creative ideas to life. Using speech recognition, you can generate either a sketch or text with AI assistance. The app provides an interactive, step-by-step process to select an output format, define a style (for sketches), and input creative prompts.
+
+## 🚀 Features
+🎤 Voice-Controlled Input – Speak your idea, and SketchKey will understand!
+
+🎨 Sketch Generation – Choose from different artistic styles: Sketchy, Flow, Angle, Handwritten.
+
+✏️ Text Generation – Describe what you want, and the AI will generate text.
+
+📊 Real-Time Progress Tracking – A visual progress bar to show task execution.
+
+🔄 Restart Option – Easily create more sketches or text without restarting the app.
 
 The Frontend part is written with the help of React Native, and the server side is represented by server.js that receives the prompt style and output parameters, and calls a python script, that enables the communication with an OpenAI model 
 ( API version 0.28 the code is also written in the syntax and grammar of an older API version),
 translation to vector graphics and further translation to G-code to enable the printer to perform the output.
 
+
+## 📱 Screens & Flow
+- Welcome Screen – Introduction to SketchKey.
+- Output Selection Screen – Choose between Sketch or Text generation, pick styles and input your prompt.
+- Loading Screen – Simulated AI processing.
+- Start Again Screen – Option to create another piece of content.
+
+## 🔧 Tech Stack
+* React Native
+* React Hooks (useState, useEffect, useCallback)
+* SpeechRecognition API
+* Animated API (for progress bar)
+* Node.js (for backend Python integration)
+* python libraries ( cv2, svg2path, pillow, serial svgwrite etc.)
+
+  
 ## Available Scripts
 
 In the project directory, you can run:
